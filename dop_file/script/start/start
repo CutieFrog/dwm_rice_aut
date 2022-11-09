@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#pacman -S xorg xorg-xinit alacritty firefox dmenu make picom
+sudo pacman -S xorg xorg-xinit alacritty firefox dmenu make picom
 
 ./write_xinit
 
