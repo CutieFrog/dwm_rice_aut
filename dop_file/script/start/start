@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -S xorg xorg-xinit alacrity firefox dmenu make picom
+#pacman -S xorg xorg-xinit alacritty firefox dmenu make picom
 
 ./write_xinit
 
@@ -10,6 +10,7 @@ pacman -S xorg xorg-xinit alacrity firefox dmenu make picom
 
 ./neovim_conf
 
+cd
 cd .config/dwm-6.3
 make && make clean install
 

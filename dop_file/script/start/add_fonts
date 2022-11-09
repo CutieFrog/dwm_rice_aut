@@ -1,4 +1,5 @@
 #!/bin/bash
+cd
 cd .local/share 
 mkdir fonts
 cd fonts
