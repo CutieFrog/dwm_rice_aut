@@ -12,5 +12,5 @@ sudo pacman -S xorg xorg-xinit alacritty firefox dmenu make picom
 
 cd
 cd .config/dwm-6.3
-make && make clean install
+sudo make && sudo make clean install
 
