@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd
+echo "exec dwm" >> .xinitrc
+echo "picom -e 1.0 &" >> .xinitrc

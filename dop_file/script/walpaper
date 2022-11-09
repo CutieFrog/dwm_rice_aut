@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+file=$(find /home/nsdos/media/wallpapers -type f | shuf -n1) 
+wal -i $file 
+python3 /home/$USER/.config/dop_file/script/python_pr/test.py
+xrdb -merge /home/nsdos/.Xresources 
+xdotool key Super+F5 
+pywalfox update 
+wal-telegram --wal

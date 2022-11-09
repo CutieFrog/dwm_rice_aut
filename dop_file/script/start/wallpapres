@@ -1,0 +1,13 @@
+#!/bin/bash
+cd
+mkdir media
+mkdir media/wallpapers
+pacman -S python-pywal
+touch .Xresources
+pacman -S xdotool
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay -S python-pywalfox
+pywalfox install
+yay -S wal-telegram-git

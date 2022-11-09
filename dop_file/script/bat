@@ -1,0 +1,12 @@
+#! /bin/bash
+
+while true; do
+	bat="$(cat /sys/class/power_supply/BAT1/capacity)"
+
+	if [ $bat -le 15 ]
+	then
+		notify-send "Низький Заряд Батареї!"
+		sleep 1m
+	fi
+	sleep 5s
+done &

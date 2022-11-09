@@ -1,0 +1,15 @@
+#!/bin/bash
+
+pacman -S xorg xorg-xinit alacrity firefox dmenu make picom
+
+./write_xinit
+
+./add_fonts
+
+./wallpapers
+
+./neovim_conf
+
+cd .config/dwm-6.3
+make && make clean install
+

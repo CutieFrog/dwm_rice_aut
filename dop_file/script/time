@@ -1,0 +1,16 @@
+#! /bin/bash
+
+dte(){
+	dte="$(date +"%H:%M")"
+	echo -e " $dte"
+}
+
+bat(){
+	bat="$(cat /sys/class/power_supply/BAT1/capacity)%"
+	echo -e " $bat"
+}
+
+while true; do
+	xsetroot -name "| $(dte) | $(bat)"
+	sleep 1m
+done &
