@@ -1,9 +1,4 @@
 #!/bin/bash
-cd
-cd .local/share 
-mkdir fonts
-cd fonts
-mkdir nerd-fonts
-cd 
-mv .config/dop_file/fonts/* .local/share/fonts/nerd-fonts
+mkdir -p /home/$USER/.local/share/fonts/nerd-fonts
+mv /home/$USER/.config/dop_file/fonts/* /home/$USER/.local/share/fonts/nerd-fonts
 fc-cache -vf
