@@ -1,7 +1,7 @@
 #!/bin/bash
-mkdir -p /home/$USER/media/wallpapers
+mkdir -p $HOME/media/wallpapers
 sudo pacman -S python-pywal
-touch /home/$USER/.Xresources
+touch $HOME/.Xresources
 sudo pacman -S xdotool
 cd
 git clone https://aur.archlinux.org/yay.git

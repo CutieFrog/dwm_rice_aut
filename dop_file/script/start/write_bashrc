@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "(cat ~/.cache/wal/sequences &)" >> /home/$USER/.bashrc
+echo "(cat ~/.cache/wal/sequences &)" >> $HOME/.bashrc
