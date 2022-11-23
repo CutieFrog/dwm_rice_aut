@@ -4,13 +4,16 @@ sudo pacman -S xorg xorg-xinit alacritty firefox dmenu make picom feh base-devel
 
 ./write_xinit
 
+./write_bashrc
+
+./write_bash_profile
+
 ./add_fonts
 
 ./wallpapers
 
 ./neovim_conf
 
-cd
-cd .config/dwm-6.3
+cd /home/$USER/.config/dwm-6.3 
 sudo make && sudo make clean install
 
